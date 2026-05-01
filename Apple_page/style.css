@@ -1,0 +1,1220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header start */
+
+header {
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    gap: 2rem;
+    background-color:  rgba(224, 224, 224, 0.8);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+header .shop {
+    gap: 2rem;
+}
+
+body {
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.logo {
+    width: 2rem;
+    height: auto;
+}
+
+nav ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    font-weight: normal;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header a {
+    text-decoration: none;
+    color: #1f1e1e;
+} 
+
+button {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+.fa-solid {
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* hidden at first */
+    position: absolute;
+    background: #000;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* show on hover */
+}
+
+.hamburger {
+    display: none;
+}
+
+.shop {
+    justify-content:space-between;
+    gap: 2rem;
+}
+
+
+
+/* header ends */
+
+/* header-two */
+
+.header-two {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding-block: 10px;
+    color: #1f1e1e;
+    font-size: clamp(0.8rem,3vw,1.2rem);
+}
+
+.header-two a {
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+}
+
+.header-two a:hover {
+    text-decoration: underline;
+}
+
+/* header-two-end */
+
+
+/* Hero- section */
+
+.hero {
+    /* background-color: #eee; */
+    background: url(/IMG/hero_iphone_17_pro.jpg) no-repeat center/cover ;
+    color: #1f1e1e;
+    height: 100vh;
+    width: auto;
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.hero-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size:3.5rem;
+    padding-block: 2.5rem 1rem;
+    color: #fff;
+}
+
+.hero-content  .p {
+    font-size: 1.9rem;
+    padding-bottom: 1rem;
+    color: #fff;
+}
+
+.hero-btn {
+   gap: 5rem;
+   padding-bottom: 1.5rem;
+}
+
+.hero-btn .learn-more {
+    background-color: rgb(80, 77, 255);
+    color: #fff;
+    font-size: clamp(0.8rem,3vw,1.2rem);
+    padding:0.7rem 1.1rem;
+    border-radius: 25px;
+    display: inline-block;
+    text-decoration: none;
+    gap: 5rem;
+
+}
+
+
+.hero-btn .learn-more:hover {
+    background-color: rgba(80, 77, 225, 8);
+}
+
+
+.hero-btn button {
+    border: 1px solid  rgb(80, 77, 255);
+    font-size: clamp(0.8rem,3vw,1.2rem);
+    padding:0.7rem 1.2rem;
+    border-radius: 25px;
+    color:  rgb(80, 77, 255);
+}
+
+.hero-content .p {
+    font-size: 1.2rem;
+}
+
+.hero-btn button:hover {
+    background-color: rgb(80, 77, 255);
+    color: #fff;
+    transition: ease-in 0.1s;
+}
+
+.hero-content .b-w-i {
+    font-size: 1.2rem;
+    color: rgb(80, 77, 255);
+}
+
+.hero-content .b-w-i span {
+    color: rgb(250, 72, 72);
+}
+
+.iphone-img img {
+    display: flex;
+    justify-content: center;    /* center horizontally */
+    align-items: center;        /* center vertically */
+    gap: 30px;                  /* space between images */
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.second-section {
+    background: url(/IMG/section_2_image.jpg) no-repeat center/cover ;
+    height:70vh;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 3rem;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    color: #fff;
+}
+
+.sec-2-content {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h2 {
+    font-size: clamp(2rem,5vw, 4rem);
+    color: #202020;
+    padding-top: 1rem;
+}
+
+.second-section p {
+    color: #202020;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    padding-top: 0.5rem;
+}
+
+.second-btn {
+   gap: 5rem;
+   padding-top: 1.5rem;
+   gap: 1rem;
+}
+
+.second-btn .learn-more {
+    background-color: rgb(80, 77, 255);
+    color: #fff;
+    font-size: 1.2rem;
+    padding:0.7rem 1.1rem;
+    border-radius: 25px;
+    display: inline-block;
+    text-decoration: none;
+    gap: 5rem;
+    padding-top: 1rem;
+
+}
+
+.second-btn .learn-more:hover {
+    background-color:rgb(0, 0, 151);
+}
+
+.second-btn button {
+    border: 1px solid  rgb(80, 77, 255);
+    font-size: 1.1rem;
+    padding:0.7rem 1.2rem;
+    border-radius: 25px;
+    color:  rgb(80, 77, 255);
+}
+
+.second-btn button:hover {
+    background-color: rgb(80, 77, 255);
+    color: #fff;
+    transition: ease-in 0.1s;
+}
+
+
+
+/* h2{
+    background-color: rgb(104, 102, 250);
+    display: inline-block;
+    padding:  1rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    width: 17%;
+    height: auto;
+    line-height: 1.4;
+    align-items: left;
+    margin-bottom: 10px;
+} */
+/* 
+.sticker {
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 0;  
+      top: 0;
+      left: 60%;
+     transform: translateX(-50%);
+}
+
+.sticker-1 {
+    z-index: 1000;
+    position: relative;
+} */
+
+
+
+/* p strong {
+    background-color: rgb(104, 102, 250);
+    display: inline-block;
+    padding:  1rem 1.5rem;
+    border-radius: 2rem;
+    height: auto;
+    line-height: 1.4;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+} */
+
+/* h3 {
+    background-color: rgb(104, 102, 250);
+    display: inline-block;
+    padding:  1rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    width: 17%;
+    height: auto;
+    line-height: 1.4;
+    align-items: center;
+    text-align: center;
+} */
+/* 
+.sec-2-content button {
+    border: 1px solid  rgb(80, 77, 255);
+    font-size: 1.1rem;
+    padding:0.7rem 1.2rem;
+    border-radius: 25px;
+    color:  rgb(80, 77, 255);
+    margin-top: 20px;
+} */
+
+/* .sec-2-content button:hover {
+    background-color: rgb(80, 77, 255);
+    color: #fff;
+    transition: ease-in 0.1s;
+} */
+
+/* .emoji {
+    position: absolute;
+   left:40%;
+} */
+
+/* section 2 end */
+
+
+  /* Section 3 start */
+/* 
+.third-section {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 1rem;
+}
+
+.third-section  .sec-3-container img {
+    width: 100%;
+    height: 70vh;
+    display: inline-block;
+} */
+
+.third-section {
+    background: url(./IMG/hero_iphone_17__2.jpg) no-repeat center/cover;
+    height:90vh;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 3rem;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+.third-section p {
+    color:#202020;
+    font-size: 2rem;
+}
+
+
+/* third section ends  */
+/* fourth section start  */
+.fourth-section .grid-container {
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding-top:1rem;
+   grid-gap: 1rem;
+}
+
+.watch-logo {
+    padding-top: 3rem;
+    width: 40%;
+    height: auto;
+}
+.grid-container p {
+    font-size: 1.4rem;
+    grid-gap: 1rem;
+}
+
+h3 {
+    font-size: 2.5rem ;
+}
+.container-1 {
+     background: url(/IMG/promo_apple_watch_series_11.jpg) no-repeat center/cover;
+     width: 100%;
+     height:80vh;
+}
+
+.container-2 {
+     background: url(/IMG/Earbud.jpg) no-repeat center/cover;
+     width: 100%;
+     height:80vh;
+}
+
+.airpod-3 {
+    padding-top: 2rem;
+}
+
+.fifth-section .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding-top:1rem;
+   grid-gap: 1rem;
+}
+
+.container-3 {
+     background: url(/IMG/education.jpg) no-repeat center/cover;
+     width: 100%;
+     height:80vh;
+    color: #fff;
+    justify-content: baseline;
+}
+
+.container-4 {
+     background: url(/IMG/section-3-macbook.jpg) no-repeat center/cover;
+     width: 100%;
+     height:80vh;
+}
+
+h4 {
+    font-size: clamp(2.2rem,6vw, 4rem);
+    padding-top: 50%;
+}
+
+.container-3 p {
+    font-size: 1.3rem;
+}
+
+
+/* scetion 5 ends  */
+/* section 6 start */
+
+.trade-in-logo {
+    width: 20%;
+    height: auto;
+    padding-top: 3rem;
+}
+
+.container-5 {
+    background: url(/IMG/promo_iphone_tradein__.jpg) no-repeat center/cover;
+    color:#000;
+    width: 100%;
+    height: 80vh;
+}
+
+.container-6 {
+    background: url(/IMG/promo_apple_card__5cm7draujpey_large.jpg) no-repeat center/cover;
+    color:#000;
+    width: 100%;
+    height: 80vh;
+}
+/* Slider section one  */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  /* padding-block: 1rem; */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.8s ease-in-out;
+  position: relative;
+}
+
+.slide {
+  min-width: 100%;
+  gap: 1rem;
+  flex: 0 0 60%;
+  height: 70vh;
+  /* width:auto; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: opacity 0.5s ease;
+  min-width: 50%;
+  background-size: cover;
+  position: relative;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+  z-index: 3;
+}
+
+
+/* ---- Slider Content ----- */
+.slider-content {
+    display: flex;
+    color: #fff;
+    gap: 1rem;
+    align-items: center;
+    position: absolute;
+    padding: 27rem 0 0 4rem; 
+    top: 20%;
+    transition: all 0.6s ease;
+
+}
+
+.slide.active .slider-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s; /* waits 2 seconds before appearing */
+}
+
+.stream {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 12px;
+    border-radius: 20px;
+    position: absolutes;
+    font-weight: 600;
+}
+
+.slider-content.strong {
+    font: 1.5rem;
+}
+.stream:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+/* --- Prev / Next Buttons --- */
+.buttons {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  z-index: 5;
+}
+
+.buttons button {
+  background: rgba(255, 255, 255, 0.7);
+  border:2px solid;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+
+
+.slider-container:hover .slide.active {
+  animation-play-state: paused;
+}
+
+/* Faded sides like*/
+.fade {
+  position: absolute;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.fade.left {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255,255,255,0));
+}
+
+.fade.right {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255,255,255,0));
+}
+
+/* Dots navigation */
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.6rem;
+  z-index: 5;
+}
+
+.dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dots button.active {
+  background-color: #fff;
+  width: 12px;
+  height: 12px;
+}
+
+
+.small-slider {
+  margin-top: 2rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 250px;            /* 👈 choose the small height you want */
+}
+
+.small-track {
+  display: flex;
+  animation: scrollSmall 18s linear infinite;
+}
+
+.small-track img {
+    gap: 2rem;
+  height: 100%;             /* 👈 makes the height small */
+  width: 50vh;              /* 👈 image keeps natural width */
+  flex-shrink: 0;           /* 👈 prevents images from shrinking */
+  display: block;
+  object-fit: cover;
+  margin: 0.3rem;;                /* 👈 NO SPACE between images */
+}
+
+/* Continuous left scrolling */
+@keyframes scrollSmall {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* FOOTER */
+
+.foot {
+    align-items: center;
+    text-align: center;
+    padding: 3rem 5rem;
+    line-height: 2;
+    line-gap-override: 2;
+    display: flex;
+}
+
+.last  {
+    display: flex;
+    gap: 7rem;
+    position: relative;
+    margin-top: 2rem;
+    align-items: center;
+    /* padding-inline: 5rem; */
+    line-height: 2.5;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 14%;
+}
+
+.last strong {
+    font-size: 1.2rem;
+}
+
+footer p {
+    align-items: center;
+    /* padding-inline: 25rem; */
+    padding-block: 2rem;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* ...RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header .shop {
+        gap: 3rem;
+        float: left;
+    }
+
+    .hero {
+        min-height: 100vh;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        min-width: 100%;
+        background: #000;
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1rem;
+        display: none;   /* hide menu until opened */
+    }
+
+    .nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 1100;
+}
+
+body.nav-open .nav-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* keep your .nav-links styles and ensure display is NOT set to none */
+
+
+    .nav-links.active {
+        display: flex;  /* show when hamburger clicked */
+    }
+
+    .left-nav {
+        align-items: center;
+        text-align: center;
+        gap: 1.2rem;
+        justify-content: space-between;
+        display: inline-block; /* show icon */
+        cursor: pointer;
+        color: #000;
+    }
+     
+    .left-nav .shop .fa-solid {
+        justify-content: baseline;
+        gap: 2rem;
+        font: 1.8rem;
+        display: none;
+    }
+
+
+    .hamburger {
+        display: inline-block; /* show icon */
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #000;
+    }
+
+
+    .fa-solid {
+    gap:1.3rem;
+    cursor: pointer;
+    justify-content: baseline;
+    }
+
+    .hero {
+    /* background-color: #eee; */
+    background: url(/IMG/hero_iphone_17_pro.jpg) no-repeat center/cover ;
+    background-size: contain/cover;
+    background-attachment: initial;
+    color: #1f1e1e;
+    height: 80vh;
+    width: 100%;
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+    .fourth-section .grid-container, .fifth-section .grid-container {
+   display: flex;
+    flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding-top:1rem;
+   grid-gap: 1rem;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  /* padding-block: 1rem; */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.8s ease-in-out;
+  position: relative;
+}
+
+.slide {
+  min-width:100%;
+  gap: 1rem;
+  /* flex: 0 0 30%; */
+  height: 50vh;
+  /* width:auto; */
+  background-size: contain/cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.5s ease;
+  min-width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.slider-content {
+    display: flex;
+    color: #fff;
+    gap: 1rem;
+    align-items: center;
+    position: absolute;
+    padding: 2rem 0 0 0; 
+    top: 70%;
+    transition: all 0.6s ease;
+
+}
+
+.slide.active .slider-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s; /* waits 2 seconds before appearing */
+}
+
+.stream {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    display: flex;
+    font: 6px;
+}
+
+.slider-content.strong {
+    font: 1.rem;
+}
+.stream:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+/* --- Prev / Next Buttons --- */
+.buttons {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  z-index: 5;
+}
+
+.buttons button {
+  background: rgba(255, 255, 255, 0.7);
+  border:2px solid;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+
+
+.slider-container:hover .slide.active {
+  animation-play-state: paused;
+}
+
+.small-slider-container {
+    height: 30vh;
+}
+
+.small-slider {
+  margin-top: 2rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 20vh;            /* 👈 choose the small height you want */
+}
+
+.small-track {
+    height: 20vh;
+    position: absolute;
+}
+
+.foot {
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    font-size: 0.8rem;
+    /* line-gap-override: 2; */
+    line-height: 1.1;
+    width: 100%;
+    display: flex;
+}
+
+.last  {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.8rem;
+    position: relative;
+    margin-top: 2rem;
+    align-items: center;
+    padding-inline:2rem;
+    line-height: 2.1;
+}
+
+.last strong {
+    font-size: 0.9rem;
+}
+
+.footer p {
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    font-size: 0.8rem;
+    /* line-gap-override: 2; */
+    line-height: 1.1;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+@media (max-width: 1250px) and (min-width: 1025px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    nav ul {
+        display: none;
+    }
+    header {
+        justify-content:space-between;
+        align-items: center;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .shop {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-block;
+        font-size: 2.2rem;
+    }
+
+    .hero-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+    .hero-content h1 {
+        font-size: clamp(3rem, 5.2vw, 4rem);
+        padding-block: 2.3rem 0.8rem;
+        color: #fff;
+    }
+
+    .hero-content .p {
+        font-size: clamp(1.4rem, 3.2vw, 2rem);
+        padding-bottom: 0.8rem;
+        color: #fff;
+    }
+
+    .last  {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    position: relative;
+    margin-top: 2rem;
+    align-items: center;
+    padding-inline:2rem;
+    line-height: 2.1;
+}
+
+.last strong {
+    font-size: 0.9rem;
+}
+
+    .footer {
+        padding: 1rem;
+    }
+} 
+
+@media (max-width: 1024px) {
+    header {
+        gap: 1rem;
+        padding-inline: 0.8rem;
+    }
+
+    .hero {
+        height: 85vh;
+    }
+
+        nav ul {
+        display: none;
+    }
+    header {
+        justify-content:space-between;
+        align-items: center;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .shop {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-block;
+        font-size: 2.2rem;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2.6rem, 6vw, 3.6rem);
+    }
+
+    .hero-content .p {
+        font-size: clamp(1.1rem, 3.2vw, 1.8rem);
+    }
+
+    .second-section,
+    .third-section {
+        height: auto;
+        min-height: 60vh;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .fifth-section .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .container-1,
+    .container-2,
+    .container-3,
+    .container-4,
+    .container-5,
+    .container-6 {
+        height: 70vh;
+    }
+
+    .slider-container,
+    .slide {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 0.6rem 0.8rem;
+    }
+
+    nav ul {
+        gap: 0.8rem;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2.5rem, 9vw, 2.6rem);
+        padding-top: 1.8rem;
+    }
+
+    .hero-content .p {
+        font-size: clamp(1.5rem, 4.2vw, 1.3rem);
+    }
+
+    .hero-btn {
+        gap: 1rem;
+    }
+
+    .hero-btn .learn-more,
+    .hero-btn button {
+        padding: 0.6rem 1rem;
+    }
+
+    .second-section,
+    .third-section {
+        padding: 2rem 1rem;
+        min-height: 55vh;
+    }
+
+    .container-1,
+    .container-2,
+    .container-3,
+    .container-4,
+    .container-5,
+    .container-6 {
+        height: 60vh;
+    }
+
+    .slider-container,
+    .slide {
+        height: 45vh;
+    }
+
+    .slider-content {
+        top: 65%;
+        padding: 1rem 0.5rem 0 0.5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font: 3rem;
+    }
+
+    .header-two {
+        padding-inline: 0.6rem;
+    }
+
+    .buttons button {
+        padding: 6px;
+    }
+
+    .small-slider {
+        height: 16vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
